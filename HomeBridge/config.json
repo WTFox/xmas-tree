@@ -1,0 +1,28 @@
+{   
+    "bridge": {
+        name": "HomebridgePI",
+        "username": "CC:22:3D:E3:CE:31",
+        "port": 51826,
+        "pin": "031-45-154"
+    },
+
+    "description": "This is an example configuration file with Phillips Hue platform.",
+    "platforms": [
+       {
+            "platform": "Particle",
+            "name": "Particle Devices",
+            "access_token": "",
+            "cloudurl": "https://api.particle.io/v1/devices/",
+            "devices": [
+                {
+                    "accessory": "Christmas Tress",
+                    "name": "Christmas Tree",
+                    "deviceid": "station_ferret",
+                    "type": "LIGHT",
+                    "function_name": "toggleLights",
+                    "args": "0={STATE}"
+                }
+            ]
+        }
+    ]
+}
